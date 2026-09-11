@@ -1,9 +1,14 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
 #airbnbs {
     display: grid;
     grid-template-columns: repeat(4,288px);
     grid-template-rows: repeat(2,360px);
     gap:15px;
-    justify-content: center;;
+    justify-content: center;
     
 }
 
