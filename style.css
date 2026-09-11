@@ -1,0 +1,45 @@
+#airbnbs {
+    display: grid;
+    grid-template-columns: repeat(4,288px);
+    grid-template-rows: repeat(2,360px);
+    gap:15px;
+    justify-content: center;;
+    
+}
+
+.airbnb_card {
+    height: 288px;
+    width: 288px;
+    background-color: #C8C8C8;
+    position: relative;
+}
+
+.lower_panel {
+    height: 72px;
+    width: 288px;
+    background-color: #CEF9FF;
+    position: absolute;
+    bottom: -72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 150px;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 100%;
+}
+
+.heart {
+    width: 16px;
+    height: 16px;
+}
+
+.more {
+    font-family: "Inter", sans-serif;
+}
+
+#title {
+    font-family: "Inter", sans-serif;
+}
