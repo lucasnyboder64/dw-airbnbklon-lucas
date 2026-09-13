@@ -3,11 +3,20 @@ a {
     color: black;
 }
 
+#title_row {
+    grid-column: 1 / -1;
+}
+
+#title {
+    font-family: "Inter", sans-serif;
+    margin: 0 0 20px 0;
+}
+
 #airbnbs {
     display: grid;
-    grid-template-columns: repeat(4,288px);
-    grid-template-rows: repeat(2,360px);
-    gap:15px;
+    grid-template-columns: repeat(4, 288px);
+    grid-auto-rows: 60px 360px 360px;
+    gap: 15px;
     justify-content: center;
     
 }
@@ -42,9 +51,5 @@ a {
 }
 
 .more {
-    font-family: "Inter", sans-serif;
-}
-
-#title {
     font-family: "Inter", sans-serif;
 }

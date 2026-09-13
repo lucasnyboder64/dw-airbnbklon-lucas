@@ -6,3 +6,30 @@
 #about {
     display: flex;
 }
+
+#about_text {
+    padding: 100px;
+}
+
+#favorit {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+#heart {
+    width: 34px;
+    height: 32px;
+}
+
+#container {
+    position: relative;
+}
+
+#favorit strong {
+    font-family: "Inter", sans-serif;
+}
