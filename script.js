@@ -9,6 +9,7 @@ text.textContent = "Apartments for rent";
 titleDiv.append(text);
 document.body.append(titleDiv);
 
+// index.html
 function genererCard(id) {
     fetch("data/" + id + ".json", {
         headers: {
@@ -46,12 +47,9 @@ function genererCard(id) {
 }
 
 function addToFavorite(event) {
+    let heart = EventTarget.t
     event.target.setAttribute("src", "img/heart.svg");
-    if (!event.target.classList == "active") {
-        event.target.classList.add("active");
-    } else {
-        event.target.classList.remove("active");
-    }
+    
 }
 
 genererCard(1);

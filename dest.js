@@ -1,15 +1,21 @@
 
 const url = new URL(window.location.href);
 const params = new URLSearchParams(url.search);
-const text = document.querySelector("#destination_text");
+const text = document.createElement("p");
+text.id = "destination_text";
 const id = params.get("id");
-const big_image = document.querySelector("#image");
-const sted = document.querySelector("#destination");
-const title = document.querySelector("#title");
-const subtitle = document.querySelector("#subtitle");
-const aboutText = document.querySelector("#title");
-const facilities = document.querySelector("#facilities");
-
+const big_image = document.createElement("img");
+big_image.id = "image";
+const sted = document.createElement("h1");
+sted.id = "destination";
+const title = document.createElement("p");
+title.id = "title";
+const subtitle = document.createElement("p");
+subtitle.id = "subtitle";
+const aboutText = document.createElement("p");
+aboutText.id = "title";
+const facilities = document.createElement("ul");
+facilities.id = "facilities";
 //   alert(params.get("id"));
 
 /*
