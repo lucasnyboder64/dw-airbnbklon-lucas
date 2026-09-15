@@ -1,3 +1,10 @@
+#wrapper {
+    display: flex;
+    width: 1440px;
+    margin: 0 auto;
+    align-items: center;
+}
+
 #image {
     width: 712px;
     height: 832px;
@@ -28,8 +35,25 @@
 
 #container {
     position: relative;
+    width: 483px;
+    margin: 0 auto;
 }
 
 #favorit strong {
     font-family: "Inter", sans-serif;
+}
+
+#destination {
+    font-size: 40px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+#facilities_text {
+    font-weight: 900;
+}
+
+#title {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
 }

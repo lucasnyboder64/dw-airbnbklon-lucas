@@ -16,6 +16,12 @@ const aboutText = document.createElement("p");
 aboutText.id = "title";
 const facilities = document.createElement("ul");
 facilities.id = "facilities";
+const container = document.createElement("div");
+container.id = "container";
+const wrapper = document.createElement("div");
+wrapper.id = "wrapper";
+const facilities_text = document.createElement("p");
+facilities_text.id = "facilities_text";
 //   alert(params.get("id"));
 
 /*
@@ -45,9 +51,15 @@ if (id != null) {
             title.textContent = data.title;
             subtitle.textContent = data.subtitle;
             aboutText.textContent = data.text;
+            facilities_text.textContent = "Facilities";
             data.facilities.forEach(element => {
-                facilities.innerHTML+="<li>"+element+"</li>";
+                facilities.innerHTML += "<li>" + element + "</li>";
             });
+
+
+            container.append(sted, title, subtitle, aboutText, facilities_text, facilities);
+            wrapper.append(big_image, container);
+            document.body.append(wrapper);
         })
         .catch(error => console.error(error));
 }

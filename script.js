@@ -46,9 +46,11 @@ function genererCard(id) {
         .catch(error => console.error(error));
 }
 
+
+
 function addToFavorite(event) {
-    let heart = EventTarget.t
-    event.target.setAttribute("src", "img/heart.svg");
+    let heart = event.target;
+    heart.setAttribute("src", "img/heart.svg");
     
 }
 
@@ -60,4 +62,3 @@ genererCard(5);
 genererCard(6);
 genererCard(7);
 genererCard(8);
-
