@@ -15,10 +15,10 @@ a {
 #airbnbs {
     display: grid;
     grid-template-columns: repeat(4, 288px);
-    grid-auto-rows: 60px 360px 360px;
+    grid-auto-rows: 360px 360px 360px;
     gap: 15px;
     justify-content: center;
-    
+
 }
 
 .airbnb_card {
@@ -48,6 +48,7 @@ a {
 .heart {
     width: 16px;
     height: 16px;
+    cursor: pointer;
 }
 
 .more {
